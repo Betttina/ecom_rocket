@@ -1,5 +1,7 @@
 <?php
 
+require_once("settings.php");
+
 function meubeltheme_enqueue(){
     // Här länkar vi till CSS och JS.
     $theme_directory = get_template_directory_uri();
