@@ -1,4 +1,8 @@
 {
+  "resources/images/shopping-cart.svg": {
+    "file": "assets/shopping-cart.svg",
+    "src": "resources/images/shopping-cart.svg"
+  },
   "resources/scripts/app.js": {
     "file": "assets/app.js",
     "isEntry": true,
