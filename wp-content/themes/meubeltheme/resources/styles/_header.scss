@@ -1,3 +1,4 @@
+
 header{
     display:flex;
     flex-direction: row;
@@ -99,8 +100,6 @@ header{
         
     
             a {
-                
-                content: "";
                 background-image: url('/resources/images/shopping-cart.svg');
                 background-position: center center;
                 background-size: contain;
@@ -111,14 +110,11 @@ header{
                 width: 20px;
                 height: 20px;
                 color: transparent;
-            
+        
             }   
           
-        }
+        }        
+        }   
     }
-    
-
-
   }
 
-}
