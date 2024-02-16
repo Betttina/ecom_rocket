@@ -7,6 +7,8 @@ if(!defined('ABSPATH')){
 
 require_once("vite.php");
 
+require_once("hooks.php");
+
 // require_once("hooks.php");
 
 //Initialize theme
