@@ -15,6 +15,7 @@ footer {
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
+
   }
 
 
@@ -28,8 +29,6 @@ footer {
 
     .column-big, .column-small {
       display: flex; // order content in columns vertically
-      flex-direction: column; // same
-      justify-content: center; // center content vertically inside the columns
     }
 
     .column-big {
@@ -41,25 +40,37 @@ footer {
     }
 
     .address_field{
+      display: flex;
+      align-items: center;
 
 
+      p{
+      font-family: $font;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: $secondary-font-color;
+      }
     }
 
-    .links-menu{
+    .links-menu, .help-menu, .newsletter-form-container{
+      display:flex;
+      align-items: flex-start;
+      flex-direction: column; // same
 
       /*width: 66px;
       height: 233px;*/
       top: 1418px;
       left: 525.01px;
 
-
-
       ul {
         text-align: left;
         list-style-type: none;
         margin: 0;
         padding: 0;
-        width: 60px;
+        width:140px;
 
         li {
           margin-top: 3rem;
@@ -72,10 +83,39 @@ footer {
           font-weight: 500;
           line-height: 24px;
           text-decoration:none;
+          color: $primary-font-color;
 
         }
       }
 
+
+    }
+
+
+    .newsletter-form-container{
+
+      form {
+        margin-top: 3rem;
+
+        .newsletter_email, .newsletter_submit{
+          font-family: $font;
+          border-bottom: solid 2px #242424;
+          background-color: transparent;
+          border-top: none;
+          border-left: none;
+          border-right: none;
+        }
+
+        label input{
+          color: $secondary-font-color;
+          margin-right: 5px;
+        }
+
+        .newsletter_submit:hover {
+        cursor:pointer;
+        }
+
+      }
 
     }
 

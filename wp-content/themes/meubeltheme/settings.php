@@ -128,39 +128,59 @@ function meubeltheme_add_settings_init(){
         "footer"
     );
 
-    // Register setting for address-field in footer
+    // ---------- ADRESS FIELD ---------
+
+    // Register setting for street-address in footer
     register_setting(
-        "footer",
-        "address_field"
+        "footer", //option group
+        "address_street" // option name
     );
 
     add_settings_field(
-        "address_field", //id
-        "Address Field", // title
+        "address_street", //id
+        "Address (street):", // title
         "meubeltheme_section_setting", //callback
         "footer", //page
         "footer_general", //section
         array(
-            "option_name" => "address_field",
+            "option_name" => "address_street",
             "option_type" => "text"
         )
     );
 
 
-    // ---------- Register address_city ---------
+    // ---------- ADDRESS CITY ---------
     register_setting(
         "footer",
         "address_city"
     );
 
     add_settings_field(
-        "address_city",
-        "City",
+        "address_city", // id for field
+        "City:", // field title
         "meubeltheme_section_setting",
-        "footer",
-        "address_city",
+        "footer", //page
+        "footer_general", //section
         array(
             "option_name" => "address_city",
+            "option_type" => "text"
+        )
+    );
+
+    // ---------- ADDRESS zip code and state ---------
+    register_setting(
+        "footer",
+        "address_zip"
+    );
+
+    add_settings_field(
+        "address_zip", // id for field
+        "Zip code and state:", // field title
+        "meubeltheme_section_setting",
+        "footer", //page
+        "footer_general", //section
+        array(
+            "option_name" => "address_zip",
             "option_type" => "text"
         )
     );
@@ -175,6 +195,7 @@ function meubeltheme_add_settings_section_general(){
 }
 
 //Ritar ut inställningsfält
+// Sending submitted values to database
 function meubeltheme_section_setting($args){
     $option_name = $args["option_name"];
     $option_type = $args["option_type"];
