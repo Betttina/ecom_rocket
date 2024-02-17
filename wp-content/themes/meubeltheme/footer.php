@@ -11,6 +11,14 @@
 
         <div class="column-big">
             <h4>No title</h4>
+
+            <?php if(!empty(get_option("address_field"))) : ?>
+                <div class="address_field">
+                    <p> <?= get_option("address_field"); ?></p>
+                </div>
+            <?php endif;?>
+
+
         </div>
 
         <div class="column-small">

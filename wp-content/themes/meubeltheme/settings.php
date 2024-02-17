@@ -146,29 +146,22 @@ function meubeltheme_add_settings_init(){
         )
     );
 
-    // add Newsletter-section
-    add_settings_section(
-        "footer_newsletter", //section name
-        "Newsletter field for footer section", //section title
-        "meubeltheme_add_settings_section_general",
-        "footer"
-    );
 
-    // Register newsletter-settings
+    // ---------- Register address_city ---------
     register_setting(
         "footer",
-        "newsletter_field"
+        "address_city"
     );
 
     add_settings_field(
-        "newsletter_field",
-        "Newsletter",
+        "address_city",
+        "City",
         "meubeltheme_section_setting",
         "footer",
-        "footer_newsletter",
+        "address_city",
         array(
-            "option_name" => "store_open",
-            "option_type" => "time"
+            "option_name" => "address_city",
+            "option_type" => "text"
         )
     );
 
