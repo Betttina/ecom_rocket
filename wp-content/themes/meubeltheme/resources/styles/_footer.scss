@@ -1,5 +1,56 @@
-footer {
 
+/* ---- PINK BANNER --- */
+
+.banner-pink{
+  display:flex;
+  background-color: $secondary-color;
+  justify-content:space-evenly;
+  align-items: center;
+  padding: 5rem;
+  flex-wrap: wrap;
+
+  .col-pink{
+    width: 376px;
+    height: 108px;
+    flex-wrap: wrap;
+    max-width: 100%;
+    /*align-items: flex-start;*/
+    gap: 10px;
+    justify-content: flex-start;
+    /*flex: 1;*/
+
+
+
+    h3{
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 48px;
+      letter-spacing: 0em;
+      text-align: left;
+      padding:0;
+      margin:0;
+
+    }
+
+    p{
+      color: $secondary-font-color;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: 0em;
+      text-align: left;
+      padding:0;
+      margin:0;
+    }
+
+  }
+}
+
+
+
+
+/* ----- Main Footer ----- */
+footer {
   height: 555px;
   display: flex;
   justify-content:center;
@@ -19,7 +70,7 @@ footer {
 
 
   .footer-section {
-    margin: 0 auto; 
+    margin: 0 auto;
     max-width:1240px;
     flex-wrap: wrap;
     border-bottom: 1px solid $primary-color;
@@ -98,8 +149,14 @@ footer {
 
     .newsletter-form-container{
 
+
+
       form {
         margin-top: 3rem;
+
+        label {
+          color: $secondary-font-color; // fungerar inte
+        }
 
         .newsletter_email, .newsletter_submit{
           font-family: $font;
@@ -110,9 +167,8 @@ footer {
           border-right: none;
         }
 
-        label input{
-          color: $secondary-font-color;
-          margin-right: 5px;
+        .newsletter_submit{
+          margin-left: 5px;
         }
 
         .newsletter_submit:hover {
@@ -122,8 +178,6 @@ footer {
       }
 
     }
-
-
 
   }
 
@@ -142,51 +196,5 @@ footer {
     }
   }
 
-
 }
 /* --- footer end ---*/
-
-.banner-pink{
-  display:flex;
-  background-color: $secondary-color;
-  justify-content:space-evenly;
-  align-items: center;
-  padding: 5rem;
-  flex-wrap: wrap;
-
-  .col-pink{
-    width: 376px;
-    height: 108px;
-    flex-wrap: wrap;
-    max-width: 100%;
-    /*align-items: flex-start;*/
-    gap: 10px;
-    justify-content: flex-start;
-    /*flex: 1;*/
-
-
-
-    h3{
-      font-size: 32px;
-      font-weight: 500;
-      line-height: 48px;
-      letter-spacing: 0em;
-      text-align: left;
-      padding:0;
-      margin:0;
-
-    }
-
-    p{
-      color: $secondary-font-color;
-      font-size: 20px;
-      font-weight: 400;
-      line-height: 30px;
-      letter-spacing: 0em;
-      text-align: left;
-      padding:0;
-      margin:0;
-    }
-
-  }
-}
