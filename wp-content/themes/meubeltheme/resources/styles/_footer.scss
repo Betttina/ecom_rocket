@@ -21,7 +21,13 @@ footer {
 
 
   .footer-section {
-    border: 1px solid #000000;
+    margin: 0 auto;
+    max-width:1240px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid $primary-color;
+    border-top: none;
+    border-left: none;
+    border-right: none;
     width: 1240.01px;
     height: 419px;
     display: flex; // order columns horizontally
@@ -119,6 +125,23 @@ footer {
 
     }
 
+
+
+  }
+
+  .copyright-field{
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    padding: 2rem 0 2rem 0;
+    div p{
+      font-family: $font;
+      color: $primary-font-color;
+      font-size: 16px;
+      line-height: 24px;
+
+
+    }
   }
 
 

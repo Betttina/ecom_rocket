@@ -42,7 +42,7 @@ function meubeltheme_add_settings_callback(){
 
     ?>
     <div class="wrap">
-        <h2>Footer-inställningar</h2>
+        <h2>Footer-settings</h2>
         <form action="options.php" method="post">
             <?php
             settings_fields("footer");
@@ -185,9 +185,31 @@ function meubeltheme_add_settings_init(){
         )
     );
 
+
+    // Registrera en ny inställning för "Meubel House"
+    register_setting('footer', 'copyright_year');
+
+    // Lägg till ett nytt fält i den allmänna sektionen
+    add_settings_field(
+        'copyright_year',
+        'Year of copyright:',
+        'meubeltheme_section_setting',
+        'footer',
+        "footer_general", //section
+        array(
+            "option_name" => "copyright_year",
+            "option_type" => "text"
+        )
+    );
+
 }
 
 add_action('admin_init', 'meubeltheme_add_settings_init');
+
+function mytheme_year_setting_callback() {
+    $year = get_option('mytheme_year_setting');
+    echo '<input type="text" id="mytheme_year_setting" name="mytheme_year_setting" value="' . esc_attr($year) . '" />';
+}
 
 // Ritar ut sektionen "general"s beskrivning
 function meubeltheme_add_settings_section_general(){
@@ -201,8 +223,12 @@ function meubeltheme_section_setting($args){
     $option_type = $args["option_type"];
     $option_value = get_option($args["option_name"]);
     echo '<input type="' . $option_type . '" id="' . $option_name . '" name="' . $option_name . '" value="'. $option_value .'"/>';
+
 }
 
+
+
+/* Extra, ska kollas över!*/
 
 // Lägg till sidan i adminmenyn
 function mytheme_add_admin_page() {
