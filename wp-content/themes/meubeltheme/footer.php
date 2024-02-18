@@ -5,7 +5,35 @@
     <?php endif;?>
 
 
+
+
+<div class="banner-pink">
+    <div class="col-pink">
+        <h3>Free Delivery</h3>
+        <p>
+            For all oders over $50, consectetur adipim scing elit.
+        </p>
+    </div>
+
+    <div class="col-pink">
+        <h3>90 Days Return</h3>
+        <p>
+            If goods have problems, consectetur adipim scing elit.
+        </p>
+
+    </div>
+
+    <div class="col-pink">
+        <h3>Secure Payment</h3>
+        <p>100% secure payment, consectetur adipim scing elit.</p>
+    </div>
+
+</div>
+
+
 <footer>
+
+
 <div class="footer-big">
     <div class="footer-section">
 
