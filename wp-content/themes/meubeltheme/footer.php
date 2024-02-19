@@ -107,7 +107,7 @@
     <div class="copyright-field">
         <div class="copyright-box">
             <p><?= get_option("copyright_year"); ?>
-                <?= get_option("blogname");?>. All rights reserved</p>
+                <?= get_option("blogname"); ?>. All rights reserved</p>
         </div>
     </div>
 
