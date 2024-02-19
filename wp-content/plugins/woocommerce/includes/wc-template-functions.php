@@ -2353,6 +2353,7 @@ if ( ! function_exists( 'woocommerce_breadcrumb' ) ) {
 			)
 		);
 
+
 		$breadcrumbs = new WC_Breadcrumb();
 
 		if ( ! empty( $args['home'] ) ) {

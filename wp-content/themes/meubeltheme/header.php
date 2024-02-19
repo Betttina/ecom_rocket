@@ -41,5 +41,24 @@
     
     </header>
 
-<div class="hero"></div>
-<div class="sharp-white"></div>
+
+<div class="hero-container">
+
+<div class="hero">
+
+</div>
+<div class="logo">
+
+</div>
+<div class="title-breadcrumb">
+<h1> <?php wp_title(); ?> </h1>
+<div class="breadcrumb">
+<?php woocommerce_breadcrumb(); ?>
+</div>
+</div>
+
+
+
+</div>
+
+
