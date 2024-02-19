@@ -42,4 +42,4 @@
     </header>
 
 <div class="hero"></div>
-
+<div class="sharp-white"></div>

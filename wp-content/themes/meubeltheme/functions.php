@@ -9,6 +9,7 @@ require_once("vite.php");
 
 require_once("hooks.php");
 
+require_once("checkout-hooks.php");
 
 //Initialize theme
 require_once(get_template_directory() . "/init.php");
