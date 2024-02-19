@@ -116,7 +116,27 @@ header{
 }
 
 .hero {
+  position:relative;
+  background-image: url("/resources/images/hero.jpg");
   background-color: #b7b7d9; height: 316px; width:auto;
-  align-items:center;
+  background-size:cover;
+  background-position: center;
+  filter: blur(1px);
+  -webkit-filter: blur(1.2px);
   justify-content:center;
+  // box-shadow: inset 3px 3px 10px 0 #ffffff;
+
+  &::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0.5;
+    z-index: 1;
+  }
+
 }
+

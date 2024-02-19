@@ -42,4 +42,5 @@
     </header>
 
 
-    <div class="hero"> <p>< insert hero image here =) ></p></div>
+    <div class="hero"> 
+    </div>
